@@ -7,7 +7,6 @@ public class Calculator {
     int add(int firstNumber, int secondNumber) {
         int sum = 0;
         try {
-
             sum = firstNumber + secondNumber;
         } catch (Exception e) {
             System.out.println("the input is not a valid number.");
@@ -47,7 +46,6 @@ public class Calculator {
         } catch (Exception e) {
             System.out.println(e);
         }
-
         return product;
     }
 
@@ -55,6 +53,7 @@ public class Calculator {
     //devide method
     public double devide(int firstNumber, int secondNumber) throws CustomException {
         if (secondNumber == 0) {
+            //throw custom exception
             throw new CustomException("division by zero is not allowed");
         }
         double quotient = firstNumber / secondNumber;

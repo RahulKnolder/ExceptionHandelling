@@ -31,6 +31,7 @@ public class Main {
         //switch statement
         switch (Selector) {
             case 1:
+                //catching custom exception
                 try {
                     System.out.println(calculatorObject.devide(firstNumber, secondNUmber));
                 } catch (CustomException ex) {
